@@ -1,0 +1,31 @@
+/* Descendant Selector */
+main p{
+    color: blue;
+}
+
+/* Child Selector */
+h1>p{
+    color: blanchedalmond;
+}
+
+/* Adjacent Sibling Selector -> first element ke baad wale pr apply hoga */
+/* section+p{
+     background-color: aquamarine;
+} */
+
+/* General Sibling Selector -> first element ke baad aane walon sb pr apply hoga */
+section~p{
+    background-color: yellowgreen;
+}
+
+/* Attribute Selector */
+[target="_blank"] {
+    background-color: yellow;
+    color: black;
+    text-decoration: none;
+}
+/* For exact match */
+[alt~="PW"] {
+    background-color: blueviolet;
+}
+

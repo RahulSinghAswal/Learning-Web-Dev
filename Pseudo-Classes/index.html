@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* hover */
+        .hover:hover{
+            background-color: black;
+            color: white;
+
+        }
+
+        /* focus */
+        input:focus {
+            color: blueviolet;
+            background-color: #494141;
+            font-size: 20px;
+        }
+        /* hover, active, visited */
+        a:hover{
+            color: yellow;
+        }
+        a:active{
+            color: burlywood;
+        }
+
+        a:visited{
+            color: black;
+        }
+        /* nth child has more priority then first-child */
+
+        a:first-child{
+            background-color: palevioletred;
+        }
+
+        a:nth-child(even) {
+            background-color: blueviolet;
+        }
+
+        a:nth-child(2n+1) {
+            background-color: rgb(128, 221, 20);
+        }
+
+        /* Pseudo Elements */
+        p::first-line{
+            background-color: pink;
+        }
+
+        p::after{
+            content: "-Rahul Singh Aswal";
+            color: aquamarine;
+        }
+
+        p::before{
+            content: "PW Skills";
+            color: aquamarine;
+        }
+
+        p::selection{
+            background-color: black;
+            color: yellowgreen;
+        }
+
+
+    </style>
+    <title>Pseudo Classes</title>
+</head>
+<body>
+    <!-- Pseudo Class -->
+    <!-- hover is mostly used for anchor and button tags -->
+    <p class="hover">
+        
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, vero.
+    </p>
+ <!-- focus is mostly used for input tags -->
+    <input type="text">
+    <hr/>
+    <nav>
+        <a href="https://www.google.com/">Google</a>
+    <a href="https://www.google.com/">Google</a>
+    <a href="https://www.google.com/">Google</a>
+    <a href="https://www.google.com/">Google</a>
+    <a href="https://www.google.com/">Google</a>
+    <a href="https://www.google.com/">Google</a>
+
+    </nav>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, ratione, expedita suscipit illum, architecto a harum aliquam illo tempore quas omnis voluptates reiciendis amet tempora provident exercitationem neque eaque adipisci explicabo nobis consequuntur qui culpa odit iusto. Natus itaque cumque facilis soluta excepturi nobis sequi, debitis, voluptatum vero et omnis?
+    </p>
+    
+
+    
+</body>
+</html>

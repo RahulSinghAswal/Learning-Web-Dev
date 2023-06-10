@@ -1,0 +1,52 @@
+body {
+    background-color:red;
+}
+
+.mainDiv {
+    font-size: x-large;
+    text-align: center;
+}
+
+.mainDiv::after {
+    content: "Welcome to the demo";
+}
+
+@media (max-width : 400px) {
+    body {
+        background-color: wheat;
+    }
+    .mainDiv::after {
+        content: "I am a Small Size Screen";
+    }
+}
+
+@media (min-width:400px) and (max-width:768px) {
+    body {
+        background-color: orange;
+    }
+    .mainDiv::after {
+        content: "I am a Smartphone";
+    }
+}
+
+/* New syntax for width range -> not showing strips in media queries */
+
+@media (768px <= width <= 900px) {
+    /* If viewport is at least 768px then this style will apply */
+    body {
+        background-color: palevioletred;
+    }
+    .mainDiv::after{
+        content: "I am a Tablet";
+    }
+}
+
+@media (min-width: 900px) {
+    /* If viewport is at least 900px then this style will apply */
+    body {
+        background-color: aquamarine;
+    }
+    .mainDiv::after{
+        content: "I am a Laptop";
+    }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        .linearGradient{
+            width: 200px;
+            height: 150px;
+            background-image: linear-gradient(to left, green, pink, yellow);
+        }
+
+        .radialGradient{
+            width: 500px;
+            height: 400px;
+            /* background-image: radial-gradient(circle, yellow, green, blue); */
+            background-image: repeating-radial-gradient(
+                 red 10%,
+                  yellow 20%,
+                   blue 15%);
+        }
+
+        .conicGradient {
+            /* width: 300px; */
+            height: 500px;
+            background-image: conic-gradient(orange 10deg, yellow, black 205deg,pink);
+
+        }
+
+    </style>
+    <title>Gradients</title>
+</head>
+<body>
+    <!-- Gradients -->
+    <p>Types of Gradients</p>
+    <ul>
+        <li>
+            <p>Linear Gradient</p>
+            <div class="linearGradient">
+            
+        </div></li>
+        <li>
+            <p>
+                Radial Gradient
+            </p>
+        <div class="radialGradient"></div></li>
+        <li><p>
+            Conic Gradient
+        </p>
+    <div class="conicGradient"></div></li>
+    </ul>
+    
+</body>
+</html>
