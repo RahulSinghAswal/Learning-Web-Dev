@@ -9,7 +9,7 @@
 /* nav */
 
 nav {
-  height: 15vh;
+  height: 10vh;
 
 }
 
@@ -43,6 +43,8 @@ nav ul li a {
 
 /* Hero section */
 main {
+  /* height: 80vh; */
+  /* width: 100vw; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -54,7 +56,8 @@ main {
 }
 
 .leftmain h1, p {
-  margin: 5%;
+  margin-left: 5%;
+
 }
 
 .leftmain button {
@@ -72,17 +75,18 @@ main {
 
 /* Right section */
 .rightmain {
-  width: 60%;
+  /* width: %; */
   padding: 5%;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .rightmain  div img {
-  width: 40%;
+  width: 30%;
   margin: 2%;
 }
 
+
 .rightmain > img {
-  width: 85%;
+  width: 65%;
   margin: 2%;
 }
